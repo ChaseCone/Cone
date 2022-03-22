@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Make it look in the players direction
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
         rb.AddForce(lookDirection * speed);
 
